@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+body {
+    font-family: "reboto", sans-serif;
+}
+@font-face {
+  font-family: "reboto";
+  src: url("/src/assets/fonts/Roboto-Italic-VariableFont_wdth\,wght.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
