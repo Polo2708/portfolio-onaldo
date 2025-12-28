@@ -11,7 +11,7 @@ function NavbarComponent() {
             <nav className="relative z-50 bg-[#219EBC] border-b border-gray-200 shadow-2xl shadow-white overflow-hidden">
                 <div className="flex h-16 items-center justify-between mx-4">
                     <div className="flex shrink-0 items-center cursor-pointer">
-                        <img src="/src/assets/typescript-logo.png" alt="Your Company" className="h-8 w-auto" />
+                        <img src="/typescript-logo.png" alt="TypeScript" className="h-8 w-auto" />
                     </div>
                     <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                         <div className="hidden sm:ml-6 sm:block">
