@@ -3,7 +3,7 @@ import type { INavbar } from "../modules/navbar/interfaces/navbar-options";
 export const navbarOptions = () => {
   const options: INavbar[] = [
     {
-      name: "Home",
+      name: "Inicio",
       id: "1",
     },
     {
