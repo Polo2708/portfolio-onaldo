@@ -1,16 +1,26 @@
+import { useEffect } from "react";
+import { useProyectsStore } from "../../../store/proyectos-store";
 import { useProyectController } from "../controller/proyects-list-controller"
 
 function ProyectsComponent() {
-    const { proyectsList } = useProyectController()
+    const { } = useProyectController()
+    const { getProyects } = useProyectsStore();
+
+
+    useEffect(() => {
+        getProyects()
+
+    }, [])
+
     // console.log(proyectsList)
     return (
         <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
-            {proyectsList.map((pro) => (
+            {/* {proyectsList.map((pro) => (
                 <div key={pro.id} className="text-white">
                     <h1>{pro.name}</h1>
 
                 </div>
-            ))}
+            ))} */}
         </div>
     )
 }

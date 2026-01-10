@@ -1,9 +1,18 @@
-import { useProyects } from "../../../utils/proyects";
+import { useEffect } from "react";
+import { useProyectsStore } from "../../../store/proyectos-store";
 
 export const useProyectController = () => {
-  const { proyectsList } = useProyects();
 
+  // useEffect(() => {
+    
+  
+  //   const obtener = async () => {
+  //     getProyects()
+  //   }
+
+  //   obtener()
+  // }, [])
+  
   return {
-    proyectsList,
   };
 };
