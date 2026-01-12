@@ -1,26 +1,14 @@
-import { useEffect } from "react";
-import { useProyectsStore } from "../../../store/proyectos-store";
+import TimeLineItem from "../../../shared/time-line-item"
 import { useProyectController } from "../controller/proyects-list-controller"
 
 function ProyectsComponent() {
-    const { } = useProyectController()
-    const { getProyects } = useProyectsStore();
+    const { proyects } = useProyectController()
 
-
-    useEffect(() => {
-        getProyects()
-
-    }, [])
-
-    // console.log(proyectsList)
     return (
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2">
-            {/* {proyectsList.map((pro) => (
-                <div key={pro.id} className="text-white">
-                    <h1>{pro.name}</h1>
-
-                </div>
-            ))} */}
+        <div className="flex flex-col">
+            {proyects.map((pro, index) => (
+                <TimeLineItem key={index} date={pro.date} company={pro.company} title={pro.name} description={pro.description} />
+            ))}
         </div>
     )
 }

@@ -1,7 +1,9 @@
 import { useHeaderController } from "../controller/header-controller"
 
+
 function HeaderComponent() {
     const { } = useHeaderController()
+
 
     return (
         <header className="w-full py-8 px-4 md:py-12">

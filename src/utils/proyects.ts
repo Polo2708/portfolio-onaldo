@@ -7,13 +7,22 @@ export interface IProyects {
 }
 
 export const useProyects = () => {
-  const fetchProyects = async () => {
-    const res = await fetch("https://api.github.com/users/Polo2708/repos");
+  const proyects = [
+    {
+      name: "Ludycalendar",
+      description: "Calendario de agendamiento de ordenes de trabajo, con funcionalidades modernas como drag and drop, diferentes modales y popups, reasignacion de ordenes, cancelacion de agendamiento y muchas funcionalidades más.",
+      company: "Ludycom S.A.S",
+      date: "",
+    },
+    {
+      name: "NYM",
+      description: "",
+      company: "Yo",
+      date: "",
+    },
+  ];
 
-    const data = await res.json();
-    console.log(data);
-  };
   return {
-    fetchProyects,
+    proyects,
   };
 };
