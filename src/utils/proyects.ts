@@ -16,7 +16,7 @@ export const useProyects = () => {
     },
     {
       name: "NYM",
-      description: "",
+      description: "Mensajes anonimos por medio de un link y Firebase Realtime Database",
       company: "Yo",
       date: "",
     },

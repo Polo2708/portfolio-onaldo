@@ -10,7 +10,6 @@ function SidebarComponent() {
         <>
             {state && (
                 <div className="fixed inset-0 z-40">
-                    {/* Sidebar */}
                     <div className="fixed top-16 left-0 h-[calc(100vh-4rem)] w-full bg-gray-200 p-4 border border-white flex flex-col justify-between">
                         <div>
                             {options.map((item) => (
